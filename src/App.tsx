@@ -2,11 +2,12 @@ import React from "react";
 import { Routes } from "./routes";
 import { BrowserRouter } from "react-router-dom";
 import Nav from "./components/Navbar";
-import "bootstrap/dist/css/bootstrap.min.css";
+import GlobalStyle from "./styles/global";
 
 function App() {
   return (
     <BrowserRouter>
+      <GlobalStyle />
       <Nav />
       <Routes />
     </BrowserRouter>
